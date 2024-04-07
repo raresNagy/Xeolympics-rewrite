@@ -1,6 +1,6 @@
 import { neon } from "@neondatabase/serverless";
 import { drizzle } from "drizzle-orm/neon-http";
-import { problem, user } from "./schema";
+import { user, team, problem } from "./schema";
 
 const sql = neon(process.env.PGURL!);
 const db = drizzle(sql);
@@ -24,6 +24,17 @@ async function seed() {
 			email: "andastefanasan@gmail.com",
 			password: "funditaroz",
 			teamNumber: 14278,
+		},
+	]);
+
+	await db.insert(team).values([
+		{
+			number: 14278,
+			score: 0,
+		},
+		{
+			number: 19234,
+			score: 10,
 		},
 	]);
 
