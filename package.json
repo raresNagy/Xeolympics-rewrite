@@ -46,6 +46,7 @@
     "drizzle-orm": "^0.30.7",
     "eslint-plugin-drizzle": "^0.2.3",
     "pg": "^8.11.5",
-    "postgres": "^3.4.4"
+    "postgres": "^3.4.4",
+    "zod": "^3.22.4"
   }
 }

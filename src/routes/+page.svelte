@@ -1,4 +1,4 @@
-<main class="flex-grow flex justify-center items-center w-screen bg-blue-950">
+<main class="flex-grow flex justify-center items-center w-screen">
 	<div
 		class="h-fit rounded-lg w-auto aspect-square p-10 bg-blue-700 flex flex-col justify-around items-center"
 	>
@@ -9,5 +9,8 @@
 		<button class="text-white my-0 bg-blue-950 w-max p-3 rounded-lg"
 			><a href="/signup">Sign Up!</a>
 		</button>
+		<h3 class="text-white">
+			Or <a href="/signin" class=" text-gray-400">log in</a> if you already have an account
+		</h3>
 	</div>
 </main>
