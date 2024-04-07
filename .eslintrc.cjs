@@ -8,7 +8,11 @@ module.exports = {
 		'prettier'
 	],
 	parser: '@typescript-eslint/parser',
-	plugins: ['@typescript-eslint'],
+	plugins: ['@typescript-eslint', 'drizzle'],
+	rules: {
+		'drizzle/enforce-delete-with-where': 'error',
+		'drizzle/enforce-update-with-where': 'error'
+	},
 	parserOptions: {
 		sourceType: 'module',
 		ecmaVersion: 2020,
